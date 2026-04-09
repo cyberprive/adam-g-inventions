@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap');
+
+/* ============================================
+   FLYER STYLES — Print-ready 8.5 x 11 layout
+   ============================================ */
+
+:root {
+  --accent: #3B82F6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f3f4f6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ---- Back & Print Controls ---- */
+
+.flyer-controls {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  display: flex;
+  gap: 12px;
+  z-index: 100;
+}
+
+.flyer-controls a,
+.flyer-controls button {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.flyer-controls a {
+  background: #1f2937;
+  color: #fff;
+  border: none;
+}
+
+.flyer-controls button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+
+.flyer-controls a:hover,
+.flyer-controls button:hover {
+  opacity: 0.85;
+}
+
+/* ---- Flyer Container ---- */
+
+.flyer {
+  max-width: 8.5in;
+  min-height: 11in;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ---- Accent Color Variants ---- */
+
+.flyer.accent-fitness {
+  --accent: #DC2626;
+}
+
+.flyer.accent-tech {
+  --accent: #3B82F6;
+}
+
+.flyer.accent-lifestyle {
+  --accent: #059669;
+}
+
+.flyer.accent-mask {
+  --accent: #6B7280;
+}
+
+/* ---- Header ---- */
+
+.flyer-header {
+  background: var(--accent);
+  padding: 30px 40px;
+  text-align: center;
+  border-radius: 0 0 50% 50% / 0 0 40px 40px;
+  color: #fff;
+}
+
+.flyer-brand {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.flyer-header h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.05em;
+  margin-top: 6px;
+  font-weight: 400;
+}
+
+.flyer-header p {
+  font-size: 0.85rem;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ---- Title (below header) ---- */
+
+.flyer-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 24px;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  padding: 0 40px;
+}
+
+.flyer-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 4px;
+  padding: 0 40px;
+}
+
+/* ---- Product Image ---- */
+
+.flyer-image {
+  max-width: 500px;
+  margin: 24px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.flyer-image img {
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* ---- Features ---- */
+
+.flyer-features {
+  padding: 20px 40px;
+  flex: 1;
+}
+
+.flyer-features h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+.flyer-features ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.flyer-features li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+/* ---- Patent Line ---- */
+
+.flyer-patent {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 0.8rem;
+  color: #666;
+  letter-spacing: 0.05em;
+  padding: 0 40px;
+}
+
+/* ---- Footer ---- */
+
+.flyer-footer {
+  background: #111827;
+  color: #fff;
+  padding: 16px 40px;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: auto;
+}
+
+.flyer-footer a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.flyer-footer span {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 8px;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  @page {
+    size: 8.5in 11in;
+    margin: 0;
+  }
+
+  .flyer-controls {
+    display: none !important;
+  }
+
+  .flyer {
+    max-width: 100%;
+    min-height: 100vh;
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .flyer-header {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color-adjust: exact;
+  }
+
+  .flyer-footer {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color-adjust: exact;
+  }
+
+  .flyer-features li {
+    break-inside: avoid;
+  }
+}

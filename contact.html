@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licensing Inquiry | Adam G Inventions</title>
+  <meta name="description" content="Contact Adam G Inventions about licensing opportunities, partnerships, and business inquiries for patented inventions and registered trademarks.">
+  <meta property="og:title" content="Licensing Inquiry | Adam G Inventions">
+  <meta property="og:description" content="Interested in licensing a patented invention? Let's start the conversation.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body class="accent-fitness">
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Adam G <span>Inventions</span></a>
+
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <div class="nav__dropdown">
+          <span class="nav__dropdown-toggle">Inventions</span>
+          <div class="nav__dropdown-menu">
+            <a href="inventions/personal-assistant-glasses.html">Personal Assistant Glasses</a>
+            <a href="inventions/press-block-bench.html">Press Block & Bench</a>
+            <div class="dropdown-divider"></div>
+            <a href="inventions/hidden-garment-supporter.html">Hidden Garment Supporter</a>
+            <a href="inventions/slip-on-shoe-cover.html">Slip-On Shoe Cover</a>
+            <a href="inventions/universal-cable-holder.html">Universal Cable Holder</a>
+            <a href="inventions/vertical-blind-holder.html">Vertical Blind Holder</a>
+            <div class="dropdown-divider"></div>
+            <a href="inventions/noise-reduction-mask.html">Noise Reduction Mask</a>
+          </div>
+        </div>
+        <div class="nav__dropdown">
+          <span class="nav__dropdown-toggle">Trademarks</span>
+          <div class="nav__dropdown-menu">
+            <a href="trademarks/press.html">Press&trade;</a>
+            <a href="trademarks/get-some.html">Get Some&trade;</a>
+            <a href="trademarks/get-it.html">Get It&trade;</a>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn--primary btn--sm active">Contact</a>
+      </div>
+
+      <button class="nav__hamburger" aria-label="Toggle navigation" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="mobileNav">
+      <a href="index.html">Home</a>
+      <div class="mobile-section-label">Inventions</div>
+      <a href="inventions/personal-assistant-glasses.html">Personal Assistant Glasses</a>
+      <a href="inventions/press-block-bench.html">Press Block & Bench</a>
+      <a href="inventions/hidden-garment-supporter.html">Hidden Garment Supporter</a>
+      <a href="inventions/slip-on-shoe-cover.html">Slip-On Shoe Cover</a>
+      <a href="inventions/universal-cable-holder.html">Universal Cable Holder</a>
+      <a href="inventions/vertical-blind-holder.html">Vertical Blind Holder</a>
+      <a href="inventions/noise-reduction-mask.html">Noise Reduction Mask</a>
+      <div class="mobile-section-label">Trademarks</div>
+      <a href="trademarks/press.html">Press&trade;</a>
+      <a href="trademarks/get-some.html">Get Some&trade;</a>
+      <a href="trademarks/get-it.html">Get It&trade;</a>
+      <div class="mobile-section-label">More</div>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero--product">
+    <div class="hero__bg-text">Connect</div>
+    <div class="hero__content">
+      <h1>Licensing Inquiry</h1>
+      <p class="hero__tagline reveal">Interested in licensing a patented invention or exploring a business partnership? Let's start the conversation.</p>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="grid--2col">
+        <form class="form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form__group">
+            <label class="form__label" for="name">Name</label>
+            <input type="text" id="name" name="name" class="form__input" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="email">Email</label>
+            <input type="email" id="email" name="email" class="form__input" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="company">Company</label>
+            <input type="text" id="company" name="company" class="form__input">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="product">Invention of Interest</label>
+            <select id="product" name="product" class="form__select">
+              <option value="">Select an invention...</option>
+              <option value="personal-assistant-glasses">Personal Assistant Glasses</option>
+              <option value="press-block-bench">Press Block & Bench</option>
+              <option value="hidden-garment-supporter">Hidden Garment Supporter</option>
+              <option value="noise-reduction-mask">Noise Reduction Mask</option>
+              <option value="slip-on-shoe-cover">Slip-On Shoe Cover</option>
+              <option value="universal-cable-holder">Universal Cable Holder</option>
+              <option value="vertical-blind-holder">Vertical Blind Holder</option>
+              <option value="trademarks">Trademarks</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="message">Message</label>
+            <textarea id="message" name="message" class="form__textarea" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg">Send Inquiry</button>
+        </form>
+
+        <div class="reveal">
+          <h2>What Happens Next</h2>
+          <p>After submitting your inquiry, Adam or a representative from ASG Products LLC will review your message and respond within 2-3 business days.</p>
+          <h3>We Welcome</h3>
+          <ul class="styled-list">
+            <li>Licensing inquiries from manufacturers and distributors</li>
+            <li>Partnership and co-development proposals</li>
+            <li>Investment and joint venture discussions</li>
+            <li>Media and press inquiries</li>
+          </ul>
+          <p class="text-muted" style="font-size: 0.8125rem; margin-top: var(--space-xl);">All inquiries are confidential. Submitting this form does not constitute a binding agreement. All inventions are protected by U.S. Design Patents assigned to ASG Products LLC.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Adam G <span>Inventions</span></div>
+          <p class="footer__text">A portfolio of patented designs and registered trademarks developed by Adam G. Glickfield, offered for licensing and strategic partnerships.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Inventions</h4>
+          <div class="footer__links">
+            <a href="inventions/personal-assistant-glasses.html">Personal Assistant Glasses</a>
+            <a href="inventions/press-block-bench.html">Press Block & Bench</a>
+            <a href="inventions/slip-on-shoe-cover.html">Shoe Cover</a>
+            <a href="inventions/vertical-blind-holder.html">Vertical Blind Holder</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 ASG Products LLC. All Rights Reserved. All inventions protected by U.S. Design Patents.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
